@@ -1,0 +1,1 @@
+Get-ADUser -Filter {Enabled -eq $true} -properties * | select-object givenname,surname,EmailAddress | export-csv -path c:\temp\exportusers.csv
